@@ -1,0 +1,385 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    <link rel="stylesheet" href="{% static 'animate.css'%}">
+    <link rel="stylesheet" href="{% static 'aos.js'%}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>My Blog!</title>
+      <style>
+          .resizes{
+            height:20vh;
+            text-align:start;
+            padding:0;
+            margin:0;
+            }
+            .inputs label{
+            display:none !important;
+            }
+      </style>
+  </head>
+  <body>
+       <header>
+         <div class="top_nav smooth" >
+           <div class="container">
+             <div class="row">
+               <div class="col-lg-3 col-md-4  col-6">
+                 <div class="left_side_nav">
+                    <i class="fa fa-facebook animate__animated animate__backInLeft" style="animation-delay: 1s"></i>
+                    <i class="fa fa-google animate__animated animate__backInLeft" style="animation-delay: 1.2s"></i>
+                    <i class="fa fa-github animate__animated animate__backInLeft" style="animation-delay: 1.3s"></i>
+                    <i class="fa fa-twitter animate__animated animate__backInLeft" style="animation-delay: 1.4s"></i>
+                    <i class="fa fa-linkedin animate__animated animate__backInLeft" style="animation-delay: 1.5s"></i>
+                 </div>
+               </div>
+               <div class="col-lg-3 col-md-4  col-6">
+                 <div class="logo">
+                   <h1 class="animate__animated animate__backInDown" style="animation-delay: 0s">Mairaj</h1>
+                   <p class="animate__animated animate__zoomIn" style="animation-delay: 1s">BLOG</p>
+                 </div>
+               </div>
+               
+                 </div>
+
+
+               </div>
+             </div>
+           </div>
+         </div>
+
+         <!-- main nav -->
+         <div class="main_nav">
+           <div class="container">
+             <i class="fa fa-bars" id="show"></i>
+             <ul class="nav-links animate__animated animate__backInDown animate__faster" style="animation-delay: .0 s">
+              <li><a href="#">Home</a></li>
+               <li><a href="#skills">Skills</a></li>
+               <li><a href="#portfolio">portfolio</a></li>
+               <li><a href="#contact">contact</a></li>
+               <li><a href="#">About me</a></li> 
+             </ul>
+             </div>
+           </div>
+         </div>
+         <!-- main nav end -->
+         <!-- carousel start -->
+          <div class="slides pt-3">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active slides_1">
+                  <img src="{% static 'img/slide1.jpg'%}">
+                 <div class="slides_text">
+                  <h2 class="rounded shadow">Welcome to my Blog</h2>
+                </div>
+                </div>
+
+                 <div class="carousel-item slides_2">
+                   <img src="{% static 'img/slide2.jpg'%}" class="animate__animated animate__backInLeft animate__faster" style="animation-delay: 0s" >
+                  
+                </div>
+                <div class="carousel-item slides_3">
+                  <img src="{% static 'img/slide3.jpg'%}" class="animate__animated animate__heartBeat" style="animation-delay: 0s">
+                  <div class="slides_text">
+                  <p class="animate__animated animate__zoomIn rounded" style="animation-delay: 1.5s" >About me</p>
+                  <h4 class="animate__animated animate__backInRight" style="animation-delay: 1.2s">Python Django Full Stack Developer</h4>
+                </div>
+                </div> 
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+         <!-- carousel end -->
+         <!-- cards -->
+         <div class="svg_div">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#F6F9FA" fill-opacity="1" d="M0,32L48,58.7C96,85,192,139,288,160C384,181,480,171,576,160C672,149,768,139,864,165.3C960,192,1056,256,1152,282.7C1248,309,1344,299,1392,293.3L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+          </svg>
+         </div>
+         <div class=" cards smooth" id="skills">
+           <h2 class="pt-3 text-center  font-weight-bold animate__animated " style="animation-delay: 0s">Skills</h2>
+           <div class="row">
+             <div class="col-lg-4 col-md-6">
+               <div class="IMG about__part1">
+                 <img src="{% static 'img/django.png'%}">
+               </div>
+             </div>
+             <div class="col-lg-4 col-md-6">
+              <div class="IMG about__part1">
+                <img src="{% static 'img/web.png'%}">
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="IMG about__part1">
+                <img src="{% static 'img/boot.png'%}">
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="IMG about__part2" data-rotate="90deg" data-move-x="500px">
+                <img src="{% static 'img/react.png'%}">
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="IMG about__part2" data-rotate="90deg" data-move-x="500px">
+                <img src="{% static 'img/postgresql.png'%}">
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="IMG about__part2" data-rotate="90deg" data-move-x="500px">
+                <img src="{% static 'img/ajax.png'%}">
+              </div>
+            </div>
+            </div>
+           </div>    
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave">
+          <path fill="#F6F9FA" fill-opacity="1" d="M0,32L48,58.7C96,85,192,139,288,160C384,181,480,171,576,160C672,149,768,139,864,165.3C960,192,1056,256,1152,282.7C1248,309,1344,299,1392,293.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+         </div>
+         <!-- end cards -->
+
+
+         <!-- portfolio -->
+         <!-- end portfolio -->
+         <div class="portfolio text-center" id="portfolio">
+           <h2 class="text-center font-weight-bold pt-3">Mairaj's <span>Portfolio</span></h2>
+            <p class="w-50 m-auto">Providing outsourcing software development services using optimized and trending<br> tools.
+              Our solutions are not only modern but exhibit great performance as well.<br>
+              Let’s take a look at some of our exclusive projects.</p> 
+              <a href="#" class="btn btn-outline-info view_more">View more</a>
+              <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <div class="portfolio_inner">
+                  <div class="port_img">
+                    <img src="{% static 'img/port2.png'%}">
+                  </div>
+                  <div class="port_text">
+                    <h3>Practimyze</h3>
+                    <p>A smart Patient Appointment System with all-in-one scheduling, optimization and automation features. It streamlines practice and clinic operations, making it easier for the staff to reliably keep the doctors’ schedule full and improve patient wait times, satisfaction, and care.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mtop">
+                <div class="portfolio_inner">
+                  <div class="port_img">
+                    <img src="{% static 'img/port3.png'%}">
+                  </div>
+                  <div class="port_text">
+                    <h3>Practimyze</h3>
+                    <p>A smart Patient Appointment System with all-in-one scheduling, optimization and automation features. It streamlines practice and clinic operations, making it easier for the staff to reliably keep the doctors’ schedule full and improve patient wait times, satisfaction, and care.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="portfolio_inner">
+                  <div class="port_img">
+                    <img src="{% static 'img/login.png'%}">
+                  </div>
+                  <div class="port_text">
+                    <h3>Practimyze</h3>
+                    <p>A smart Patient Appointment System with all-in-one scheduling, optimization and automation features. It streamlines practice and clinic operations, making it easier for the staff to reliably keep the doctors’ schedule full and improve patient wait times, satisfaction, and care.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+         <!-- contact -->
+         <div class="contact_svg">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,96L60,85.3C120,75,240,53,360,74.7C480,96,600,160,720,186.7C840,213,960,203,1080,186.7C1200,171,1320,149,1380,138.7L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+         </div>
+          <div class="contact mb-5 smooth" id="contact">
+             <div class="container">
+              <h2 class="pt-3 text-center text-white  font-weight-bold about__part2 mb-5 text-uppercase" data-rotate="360deg" data-move-x="300px">Contact</h2>
+               <div class="row">
+                 <div class="col-lg-6 col-md-6">
+                  <div class="contact_right_side about__part1 mb-5" data-move-x="1000px">
+                    <div class="contact_right_side_inner left_side">
+                     <h2 class="text-muted pb-5"><span>Feel Free To Contact</span></h2>
+                       <p>Hello Everyone! Have a great day :)
+                         I am here to help you. If you want to know
+                         something or you have any suggestion then please
+                          mail me. Thank You.</p>
+                          <ul>
+                            <li><i class="fa fa-google"></i><span>mairajkhan3@gmail.com</span></li>
+                            <li><i class="fa fa-globe"></i><span>WWW.MairajKhan.Com</span></li>
+                            <li><i class="fa fa-facebook"></i><span>mairaj.rind@yahoo.com</span></li>
+                          </ul>
+                    </div>
+                 </div>
+               </div>
+               <div class="col-lg-5 col-md-4">
+                <div class="contact_right_side about__part1" data-move-x="-1000px">
+                  <div class="contact_right_side_inner">
+                     <h2 class="text-muted">Let's <span>connect</span></h2>
+                          <p id="message" class="show_message  text-primary rounded p-1 w-75 mx-auto font-weight-bold"></p>
+                      <form method="post" id="contact_form">
+                          {% csrf_token %}
+                     <div class="inputs">
+                        {{form}}
+                     <button type="button" class="btn btn-primary send mr-auto w-50 mb-4 mt-4" id="sendBtn">Send</button>
+                     </div>
+                      </form>
+                  </div>
+               </div> 
+             </div>
+                 </div>
+               </div>
+               <svg class="contact_bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,96L60,85.3C120,75,240,53,360,74.7C480,96,600,160,720,186.7C840,213,960,203,1080,186.7C1200,171,1320,149,1380,138.7L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+             </div>   
+         <!-- end contact -->
+      </header>
+      
+        
+<footer class="page-footer font-small stylish-color-dark pt-4 ">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 mx-auto">
+        <ul>
+          <li><p id="dis">DISCLAMER</p></li>
+          <li><p id="dis">PRIVACY POLICY</p></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-4 mx-auto">
+        <ul class="footer_center">
+          <li><span><i class="fa fa-copyright"></i></span><b> MairajKhan<span>2020</span></b></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-4 mx-auto">
+        <ul class="footer_right">
+          <li><a href="#"><i class="fa fa-facebook"></i></a> </li>
+          <li><a href="#"><i class="fa fa-google"></i></a> </li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a> </li>
+          <li><a href="#"><i class="fa fa-github"></i></a> </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Footer -->
+      </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="/static/js/jquery-2.2.4.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="{% static 'smovve.js'%}"></script>
+    <script>
+      $(".about__part1").smoove({offset:"40%"});
+
+      $(".about__part2").smoove({offset:"10%"});
+
+
+      $("#show").click(function(){
+        $(".nav-links").toggle();
+      });
+
+
+
+    </script>
+     <script>
+        $(function() {
+          $.scrollify({
+            section : ".smooth",
+          });
+        });
+      </script>
+
+<script>
+
+        $('#sendBtn').click(function(){
+    <!--Get Form Value-->
+          fname = $('#id_fname').val();
+          email = $('#id_email').val();
+          subject = $('#id_subject').val();
+          message = $('#id_message').val();
+    <!--          form Validation-->
+          if(fname == "" || (!isNaN(fname))){
+            var fname = $('#id_fname');
+            fname.css("border","red solid 2px");
+            $('#id_fname').focus(function(){
+                $(this).css('border','none')
+            });
+          }else if(email == "" ){
+            var email = $('#id_email');
+            email.css("border","red solid 1px");
+            $('#id_email').focus(function(){
+                $(this).css('border','none')
+            });
+          }else if(subject == ""){
+          var subject = $('#id_subject');
+          subject.css("border","red solid 1px");
+
+            $('#id_subject').focus(function(){
+                $(this).css('border','none')
+            });
+          }else if(message == ""){
+          var message = $('#id_message');
+          message.css("border","red solid 1px");
+            $('#id_message').focus(function(){
+                $(this).css('border','none')
+            });
+          }else{
+    <!-- if validation is valid Save Form-->
+            var serializeData = $("#contact_form").serialize();
+            $.ajax({
+                url: '{% url "create_contact" %}',
+                data:serializeData,
+                type:'post',
+                success:function(json){
+        <!--Change Send Button in to Please wait-->
+                var loading = document.getElementById('sendBtn').innerHTML = ("Please Wait")
+                $("#sendBtn").attr("disabled", true);
+                <!--Set Time Out change please wait button in to Send-->
+                    setTimeout(()=>{
+                    var loading = document.getElementById('sendBtn').innerHTML = ("Send")
+                <!-- Reset Form Fields-->
+                    document.getElementById('contact_form').reset();
+                <!--Succeccfully Created Message after form submit-->
+                    var show_message = document.getElementById("message");
+                <!--Add Class To change message Background-->
+                    console.log(show_message)
+                    var loading = document.getElementById('sendBtn').innerHTML = ("Send Successfully ")
+                    $("#sendBtn").css("background-color","green");
+
+                    return false;
+                    },2000);
+                    setTimeout(()=>{
+                        $("#message").fadeOut(1000);
+                        var loading = document.getElementById('sendBtn').innerHTML = ("Send")
+                        $("#sendBtn").css("background-color","#007bff");
+                        $("#sendBtn").attr("disabled", false);
+
+                    },5000);
+
+                }
+            });
+
+          }
+
+        });
+      </script>
+  </body>
+</html>
+
